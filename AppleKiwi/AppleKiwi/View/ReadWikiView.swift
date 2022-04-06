@@ -17,7 +17,7 @@ struct ReadWikiView: View {
     I have a passion for clean code, Java, teaching, PHP, Lifeguarding and Javascript
     
     My current side project is [Markdown Profile](https://markdownprofile.com)
-    
+
     [LinkedIn 💼](https://linkedin.com/in/dannyverpoort)
     
     [Twitter 🐦](https://twitter.com/dannyverp)
@@ -25,8 +25,6 @@ struct ReadWikiView: View {
     [Website 🌍](https://dannyverpoort.dev/)
     
     [Email 📬](mailto:hallo@dannyverpoort.nl)
-    
-    [![ChangBro's github stats](https://github-readme-stats.vercel.app/api?username=ChangBro&show_icons=true&theme=default)](https://github.com/ChangBro/)
     """
     
     var body: some View {
@@ -37,17 +35,11 @@ struct ReadWikiView: View {
                         Text("창브로")
                             .font(.title)
                             .bold()
-                            .padding()
                         Spacer()
-                    }
+                    }.padding()
+                    Divider()
                     MarkdownUI(body: markdown)
-                        .onTouchLink { link in
-                            print(link)
-                            return false
-                        }
-                        .onRendered { height in
-                            print(height)
-                        }
+                        .padding()
                     Spacer()
                 }
             }

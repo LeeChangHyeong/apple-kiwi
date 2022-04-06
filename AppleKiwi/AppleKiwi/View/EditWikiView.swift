@@ -24,8 +24,6 @@ struct EditWikiView: View {
     [Website 🌍](https://dannyverpoort.dev/)
     
     [Email 📬](mailto:hallo@dannyverpoort.nl)
-    
-    [![ChangBro's github stats](https://github-readme-stats.vercel.app/api?username=ChangBro&show_icons=true&theme=default)](https://github.com/ChangBro/)
     """
     
     var body: some View {
@@ -40,10 +38,13 @@ struct EditWikiView: View {
                     
                 }.padding()
             }
+            Divider()
             ScrollView(.vertical) {
-                TextEditor(text: $markdown)
-                    .padding()
-                    .frame(maxHeight: .infinity)
+                VStack {
+                    TextEditor(text: $markdown)
+                        .padding()
+                        .frame(maxHeight: .infinity)
+                }
             }
         }
     }
