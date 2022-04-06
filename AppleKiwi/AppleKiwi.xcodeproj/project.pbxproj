@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2004978727FD6B8B00B217AC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004978627FD6B8B00B217AC /* LoginView.swift */; };
+		2004978927FD717000B217AC /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004978827FD717000B217AC /* UserViewModel.swift */; };
+		2004978B27FD72FD00B217AC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004978A27FD72FD00B217AC /* SignInView.swift */; };
 		83C762EF27FD685100FDC8D0 /* AppleKiwiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C762EE27FD685100FDC8D0 /* AppleKiwiApp.swift */; };
 		83C762F127FD685100FDC8D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C762F027FD685100FDC8D0 /* ContentView.swift */; };
 		83C762F327FD685200FDC8D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C762F227FD685200FDC8D0 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2004978627FD6B8B00B217AC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2004978827FD717000B217AC /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		2004978A27FD72FD00B217AC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		83C762EB27FD685100FDC8D0 /* AppleKiwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleKiwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C762EE27FD685100FDC8D0 /* AppleKiwiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleKiwiApp.swift; sourceTree = "<group>"; };
 		83C762F027FD685100FDC8D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2004978C27FD75B100B217AC /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				2004978627FD6B8B00B217AC /* LoginView.swift */,
+				2004978A27FD72FD00B217AC /* SignInView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
 		83C762E227FD685100FDC8D0 = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +109,12 @@
 		83C762ED27FD685100FDC8D0 /* AppleKiwi */ = {
 			isa = PBXGroup;
 			children = (
+				2004978C27FD75B100B217AC /* LoginView */,
 				83C762EE27FD685100FDC8D0 /* AppleKiwiApp.swift */,
 				83C762F027FD685100FDC8D0 /* ContentView.swift */,
 				83C762F227FD685200FDC8D0 /* Assets.xcassets */,
 				83C762F427FD685200FDC8D0 /* Preview Content */,
+				2004978827FD717000B217AC /* UserViewModel.swift */,
 			);
 			path = AppleKiwi;
 			sourceTree = "<group>";
@@ -257,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2004978727FD6B8B00B217AC /* LoginView.swift in Sources */,
+				2004978927FD717000B217AC /* UserViewModel.swift in Sources */,
 				83C762F127FD685100FDC8D0 /* ContentView.swift in Sources */,
 				83C762EF27FD685100FDC8D0 /* AppleKiwiApp.swift in Sources */,
+				2004978B27FD72FD00B217AC /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
