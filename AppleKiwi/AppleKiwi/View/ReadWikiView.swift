@@ -10,31 +10,46 @@ import MarkdownView
 
 struct ReadWikiView: View {
     private var markdown: String = """
-    ## 제목
-    ### 부제목
-    *인스타그램* 아이디 @ddd.codd
-    - 아무런
+    ### Hi there 👋
+    
+    I'm Danny, a software engineer 💻 currently working at [Takeaway.com](https://takeaway.com) 🍲🥡
+    
+    I have a passion for clean code, Java, teaching, PHP, Lifeguarding and Javascript
+    
+    My current side project is [Markdown Profile](https://markdownprofile.com)
+    
+    [LinkedIn 💼](https://linkedin.com/in/dannyverpoort)
+    
+    [Twitter 🐦](https://twitter.com/dannyverp)
+    
+    [Website 🌍](https://dannyverpoort.dev/)
+    
+    [Email 📬](mailto:hallo@dannyverpoort.nl)
+    
+    [![ChangBro's github stats](https://github-readme-stats.vercel.app/api?username=ChangBro&show_icons=true&theme=default)](https://github.com/ChangBro/)
     """
     
     var body: some View {
-        ScrollView {
-            VStack {
-                HStack {
-                    Text("Hello, World!")
-                        .font(.title)
-                        .bold()
-                        .padding()
+        HStack {
+            ScrollView {
+                VStack {
+                    HStack {
+                        Text("창브로")
+                            .font(.title)
+                            .bold()
+                            .padding()
+                        Spacer()
+                    }
+                    MarkdownUI(body: markdown)
+                        .onTouchLink { link in
+                            print(link)
+                            return false
+                        }
+                        .onRendered { height in
+                            print(height)
+                        }
                     Spacer()
                 }
-                MarkdownUI(body: markdown)
-                    .onTouchLink { link in
-                        print(link)
-                        return false
-                    }
-                    .onRendered { height in
-                        print(height)
-                    }
-                Spacer()
             }
         }
     }
@@ -42,6 +57,8 @@ struct ReadWikiView: View {
 
 struct ReadWikiView_Previews: PreviewProvider {
     static var previews: some View {
-        ReadWikiView()
+        Group {
+            ReadWikiView()
+        }
     }
 }
